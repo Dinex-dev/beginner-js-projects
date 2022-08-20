@@ -8,3 +8,4 @@
 
 4. [TicTacToe](./ticTacToe)
 
+4. [RockPaperScissor](./RockPaperScissor)

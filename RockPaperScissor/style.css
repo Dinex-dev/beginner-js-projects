@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+
+.app{
+    font-family: 'Mukta', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.app-header{
+    font-size: 2rem;
+}
+.app-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+body{
+    background-color: #243537;
+    color: white;
+}
+.options{
+    display: flex;
+    gap: 1rem;
+}
+.options>*{
+    height: 5rem;
+    width: 5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #264653;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.options>*:hover{
+    filter: brightness(0.8);
+}
+#✌️{
+    transform: rotate(-90deg);
+}
+.score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.score>*,.result{
+    background-color: #264653;
+    width: 30rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.result{
+    padding: 1rem;
+    background-color: #243537;
+}
+.choice{
+    height: 30rem;
+    width: 30rem;
+    background-color: #2a9d8f;
+    font-size: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

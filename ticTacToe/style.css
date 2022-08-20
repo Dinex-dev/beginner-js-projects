@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+h1{
+    font-size: 3rem;
+}
+body{
+    font-family: 'Prompt', sans-serif;
+    background-color: #0f4e63;
+    color: #fff;
+}
 .grid-item{
-    background-color: whitesmoke;
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
+    border: 2px solid white;
+    height: 100px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,10 +20,17 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     max-width: fit-content;
+    font-size: 6rem;
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.O{
+    color: olivedrab;
+}
+.X{
+    color: orangered;
 }

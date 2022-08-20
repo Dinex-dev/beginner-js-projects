@@ -93,48 +93,57 @@ wordBox = document.querySelector(".wordBox")
 alphabetBox = document.querySelector(".alphabetBox")
 livesBox = document.querySelector(".livesBox")
 lives = 10
-livesBox.innerHTML = `Guess left : ${lives}`
-word = "hangman"
-word = word.toUpperCase()
-word = word.split("")
-letters = []
-for (let i = 65; i < 91; i++)
-    letters.push(String.fromCharCode(i))
 
 
-letters.map((letter) => {
-    alphabetBox.innerHTML += `<div class="letter">${letter}</div>`
-})
 
-for (let i = 0; i < word.length; i++) {
-    wordBox.innerHTML += `<div class ="hidden-text visible"></div>`
-}
+async function main() {
+    livesBox.innerHTML = `Guess left : ${lives}`
+    const response = await fetch('https://random-word-api.herokuapp.com/word');
+    const json = await response.json();
+    document.querySelector(".loading").remove()
+    word = json[0]
+    word = word.toUpperCase()
+    word = word.split("")
+    letters = []
+    for (let i = 65; i < 91; i++)
+        letters.push(String.fromCharCode(i))
 
-alphabetBox.childNodes.forEach((alphabet) => {
-    alphabet.addEventListener("click", () => {
-        var new_element = alphabet.cloneNode(true);
-        alphabet.parentNode.replaceChild(new_element, alphabet);
-        alphabet = new_element;
-        if (lives) {
-            if (word.includes(alphabet.innerHTML)) {
-                alphabet.classList.add("correct")
-                word.map((letter, index) => {
-                    if (letter == alphabet.innerHTML) {
-                        wordBox.childNodes[index].innerHTML = letter
-                        wordBox.childNodes[index].classList.remove("hidden-text")
-                    }
-                })
-            } else {
-                alphabet.classList.add("wrong")
-                lives--
-                Draw(draws[step++])
-            }
-            livesBox.innerHTML = lives ? `Guess left : ${lives}` : `Game Over`
-            if (!wordBox.innerHTML.includes("hidden-text")) {
-                livesBox.innerHTML = "You Win"
-                lives = 0
-            }
 
-        }
+    letters.map((letter) => {
+        alphabetBox.innerHTML += `<div class="letter">${letter}</div>`
     })
-})
+
+    for (let i = 0; i < word.length; i++) {
+        wordBox.innerHTML += `<div class ="hidden-text visible"></div>`
+    }
+
+    alphabetBox.childNodes.forEach((alphabet) => {
+        alphabet.addEventListener("click", () => {
+            var new_element = alphabet.cloneNode(true);
+            alphabet.parentNode.replaceChild(new_element, alphabet);
+            alphabet = new_element;
+            if (lives) {
+                if (word.includes(alphabet.innerHTML)) {
+                    alphabet.classList.add("correct")
+                    word.map((letter, index) => {
+                        if (letter == alphabet.innerHTML) {
+                            wordBox.childNodes[index].innerHTML = letter
+                            wordBox.childNodes[index].classList.remove("hidden-text")
+                        }
+                    })
+                } else {
+                    alphabet.classList.add("wrong")
+                    lives--
+                    Draw(draws[step++])
+                }
+                livesBox.innerHTML = lives ? `Guess left : ${lives}` : `Game Over`
+                if (!wordBox.innerHTML.includes("hidden-text")) {
+                    livesBox.innerHTML = "You Win"
+                    lives = 0
+                }
+
+            }
+        })
+    })
+}
+main()

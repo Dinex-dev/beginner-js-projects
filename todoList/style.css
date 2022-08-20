@@ -1,6 +1,4 @@
-.container{
-	max-width: 30%;
-}
+
 .list-group>li{
 	display: flex;
 	justify-content: space-between;
@@ -16,3 +14,15 @@ li>button{
 .display-1{
 	text-align: center;
 }
+.input-group{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  
+	#inputBox{
+		width: 100%;
+	}
+  }

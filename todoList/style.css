@@ -26,3 +26,9 @@ li>button{
 		width: 100%;
 	}
   }
+
+.input-group-append{
+	display: flex;
+	flex-wrap: wrap;
+	gap:1rem;
+}

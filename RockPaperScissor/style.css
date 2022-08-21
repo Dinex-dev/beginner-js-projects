@@ -3,14 +3,10 @@
 
 .app{
     font-family: 'Mukta', sans-serif;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .app-header{
-    font-size: 2rem;
+    font-size: 5vmin;
+    text-align: center;
 }
 .app-body{
     display: flex;
@@ -28,16 +24,16 @@ body{
     gap: 1rem;
 }
 .options>*{
-    height: 5rem;
-    width: 5rem;
-    padding: 2rem;
+    height: 1vw;
+    width: 1vw;
+    padding: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #264653;
     border: 1px solid #fff;
     border-radius: 50%;
-    font-size: 5rem;
+    font-size: 8vw;
     cursor: pointer;
 }
 
@@ -47,31 +43,34 @@ body{
 #✌️{
     transform: rotate(-90deg);
 }
-.score{
+.scoreBox{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5rem;
 }
 
-.score>*,.result{
+.score{
     background-color: #264653;
-    width: 30rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3vw;
     font-weight: bold;
 }
 .result{
+    font-size: 5vmin;
     padding: 1rem;
     background-color: #243537;
 }
 .choice{
-    height: 30rem;
-    width: 30rem;
+    height: 30vw;
+    width: 30vw;
     background-color: #2a9d8f;
-    font-size: 20rem;
+    font-size: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.vs{
+    font-size: 3vw;
+    margin: 0 2vw;
 }

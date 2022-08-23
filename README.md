@@ -11,3 +11,5 @@
 5. [RockPaperScissor](./RockPaperScissor)
 
 6. [Whack-A-Mole](./Whack-A-Mole)
+
+7. [InfiniteScrolling](./infiniteScrolling)

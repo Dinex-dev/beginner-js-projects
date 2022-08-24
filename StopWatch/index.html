@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-primary">
+    <div class="app d-flex flex-column justify-content-center align-content-center w-25 container">
+        <h1 class="display-1 text-black-50">StopWatch</h1>
+        <div class="card p-lg-3 bg-white flex-column">
+            <div class="flex-row d-flex justify-content-center card-header">
+                <h1 class="hours">00</h1>
+                <h1 class="sep">:</h1>
+                <h1 class="minutes">00</h1>
+                <h1 class="sep">:</h1>
+                <h1 class="seconds">00</h1>
+            </div>
+            <div class="flex-lg-row d-flex justify-content-between card-body" style="gap:2rem">
+                <button id="start" class="btn btn-primary btn-lg">Start</button>
+                <button id="stop" class="btn btn-lg btn-danger">Stop</button>
+                <button id="reset" class="btn btn-lg btn-secondary">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

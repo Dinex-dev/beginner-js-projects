@@ -13,3 +13,5 @@
 6. [Whack-A-Mole](./Whack-A-Mole)
 
 7. [InfiniteScrolling](./infiniteScrolling)
+
+8. [StopWatch](./StopWatch)

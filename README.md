@@ -15,3 +15,5 @@
 7. [InfiniteScrolling](./infiniteScrolling)
 
 8. [StopWatch](./StopWatch)
+
+9. [GrowingCircles](./GrowingCircles)

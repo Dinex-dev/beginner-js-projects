@@ -1,21 +1,21 @@
 # beginner-js-projects
 
-1. [TodoList](./todoList)
+1. TodoList [[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/todoList)] [[live](https://dinex-dev.github.io/beginner-js-projects/todoList/)]
 
-2. [Calculator](./calculator)
+2. Calculator [[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/calculator)] [[live](https://dinex-dev.github.io/beginner-js-projects/calculator/)]
 
-3. [Hangman](./hangman)
+3. Hangman [[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/hangman)] [[live](https://dinex-dev.github.io/beginner-js-projects/hangman/)]
 
-4. [TicTacToe](./ticTacToe)
+4. TicTacToe [[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/ticTacToe)] [[live](https://dinex-dev.github.io/beginner-js-projects/ticTacToe/)]
 
-5. [RockPaperScissor](./RockPaperScissor)
+5. RockPaperScissor [[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/RockPaperScissor)] [[live](https://dinex-dev.github.io/beginner-js-projects/RockPaperScissor/)]
 
-6. [Whack-A-Mole](./Whack-A-Mole)
+6. Whack-A-Mole [[source](https://github.com/Dinex-dev/beginner-js-projects/tree/master/Whack-A-Mole)] [[live](https://dinex-dev.github.io/beginner-js-projects/Whack-A-Mole/)]
 
-7. [InfiniteScrolling](./infiniteScrolling)
+7. InfiniteScrolling [[source](https://github.com/Dinex-dev/beginner-js-projects/tree/master/infiniteScrolling)] [[live](https://dinex-dev.github.io/beginner-js-projects/infiniteScrolling/)]
 
-8. [StopWatch](./StopWatch)
+8. StopWatch [[source](https://github.com/Dinex-dev/beginner-js-projects/tree/master/StopWatch)] [[live](https://dinex-dev.github.io/beginner-js-projects/StopWatch/)]
 
-9. [GrowingCircles](./GrowingCircles)
+9. GrowingCircles [[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/GrowingCircles)] [[live](https://dinex-dev.github.io/beginner-js-projects/GrowingCircles/)]
 
-10. [CatFact](./CatFact)
+10. CatFact [[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/CatFact)] [[live](https://dinex-dev.github.io/beginner-js-projects/CatFact/)]

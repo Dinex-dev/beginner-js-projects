@@ -19,3 +19,5 @@
 9. GrowingCircles [[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/GrowingCircles)] [[live](https://dinex-dev.github.io/beginner-js-projects/GrowingCircles/)]
 
 10. CatFact [[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/CatFact)] [[live](https://dinex-dev.github.io/beginner-js-projects/CatFact/)]
+
+11. MandelbrotSet[[source](https://github.com/dinex-dev/beginner-js-projects/tree/master/MandelbrotSet)] [[live](https://dinex-dev.github.io/beginner-js-projects/MandelbrotSet/)]
